@@ -1,12 +1,12 @@
 from checkCuadrado import checkCuadrado
-from checkNumerosValidos import checkNumerosValidos
+from checkNumeros import checkNumeros
 from checkFilas import checkFilas
 from checkColumnas import checkColumnas
 
 
 def check_sudoku(sudoku):
 
-    return checkCuadrado(sudoku) and checkNumerosValidos(sudoku) \
+    return checkCuadrado(sudoku) and checkNumeros(sudoku) \
         and checkFilas(sudoku) and checkColumnas(sudoku)
 
 
